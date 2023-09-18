@@ -10,41 +10,29 @@
 	<meta charset="UTF-8">
 	<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="./assets/maugallery.js" defer></script>
-	<script src="./assets/scripts.js" defer></script>
+
 	<meta name="description" content="Je suis Nina Carducci, photographe professionnelle spécialisée dans la capture de moments uniques (mariages, concerts, portraits, événements d'entreprise, ...). Découvrez mon portfolio de photographies artistiques et contactez-moi pour immortaliser vos moments spéciaux.">	
 	
-	<!-- Open Graph meta pour Facebook -->
+	<!-- Open Graph meta pour Facebook et Linkdin -->
 	<meta property="og:title" content="Portfolio de la photographe Nina Carducci" />
 	<meta property="og:url" content="https://marinevnt.github.io/Nina-Carducci--OpenClassrooms/" />
 	<meta property="og:image" content="https://marinevnt.github.io/Nina-Carducci--OpenClassrooms/assets/images/nina-carducci-portrait.webp" />
 	<meta property="og:description" content="Je suis Nina Carducci, photographe professionnelle spécialisée dans la capture de moments uniques (mariages, concerts, portraits, événements d'entreprise, ...). Découvrez mon portfolio de photographies artistiques et contactez-moi pour immortaliser vos moments spéciaux."/>
 	<meta property="og:site_name" content="Nina Carducci" />
 	<meta property="og:type" content="website" />
-	
-	<title>Portfolio de la photographe Nina Carducci</title>
 
-	<!-- Balisage JSON-LD pour les données structurées Schema.org -->
-	<script type="application/ld+json">
-		{
-		  "@context": "http://schema.org",
-		  "@type": "LocalBusiness",
-		  "name": "Nina Carducci",
-		  "description": "Photographe professionnelle spécialisée dans la capture de moments uniques. Découvrez mon portfolio de photographies artistiques et contactez-moi pour discuter de vos besoins.",
-		  "address": {
-			"@type": "PostalAddress",
-			"streetAddress": "68 avenue Alsace Lorraine",
-			"addressLocality": "Bordeaux",
-			"postalCode": "33200",
-			"addressCountry": "FR"
-		  },
-		  "telephone": "+33-5-56-67-78-89",
-		  "openingHours": "Mo-Fr 10:00-19:00"
-		}
-	</script>
+	<!-- Twitter summary card with large image must be at least 280x150px -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Portfolio de la photographe Nina Carducci">
+	<meta name="twitter:description" content="Je suis Nina Carducci, photographe professionnelle spécialisée dans la capture de moments uniques (mariages, concerts, portraits, événements d'entreprise, ...). Découvrez mon portfolio de photographies artistiques et contactez-moi pour immortaliser vos moments spéciaux."/>
+	<meta name="twitter:image" content="https://marinevnt.github.io/Nina-Carducci--OpenClassrooms/" />
+	<meta name="twitter:url" content="assets/images/nina-carducci-portrait-twitter.webp">
+
+	<title>Portfolio de la photographe Nina Carducci</title>
 </head>
+
 <body>
-<div class="top-header">
+<header class="top-header">
 	<h1 class="name">Nina Carducci</h1>
 	<div class="nav">   
 		<ul>
@@ -55,9 +43,8 @@
 			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/logo-instagram.webp" alt="logo Instagram" aria-label="Lien vers le profil instagram" width="20" height="20"></a></li>
 		</ul>
 	</div>
-</div>
-<div id="header">
-
+</header>
+<section id="header">
 	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 		<div class="carousel-indicators">
 			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -96,8 +83,8 @@
 			<span class="visually-hidden">Next</span>
 		</button>
 	</div>
-</div>
-<div id="about">
+</section>
+<aside id="about">
 	<div class="picture left">
 		<img src="./assets/images/nina-carducci-portrait.webp" 
 			srcset="./assets/images/nina-carducci-portrait-w470-h469.webp 1180w, ./assets/images/nina-carducci-portrait-w400-h399.webp 1000w, ./assets/images/nina-carducci-portrait.webp 650w"
@@ -109,20 +96,20 @@
 		<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 			C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 	</div>
-</div>
-<div id="gallery">
+</aside>
+<section id="gallery">
 	<h2 class="title">Portfolio</h2>
 	<div class="container py-3">
 		<div class="gallery" style="display: none">
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-concert-1.webp" alt="concert" />
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-buisness-man.webp" alt="homme d'affaire" />
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-buisness-portrait.webp" alt="portrait en entreprise" />
-			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-wedding-hands.webp" alt="mains" />
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-man-portrait.webp" alt="portrait d'homme" />
-			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-wedding-portrait.webp" alt="photo de mariés" />
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg-women-portrait.webp" alt="portrait de femme" />
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-concert.webp" alt="concert" />
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-woman-portrait.webp" alt="portrait de femme" />
+			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-concert-1.webp" alt="concert" loading="lazy"/>
+			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-buisness-man.webp" alt="homme d'affaire" loading="lazy"/>
+			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-buisness-portrait.webp" alt="portrait en entreprise" loading="lazy"/>
+			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-wedding-hands.webp" alt="mains" loading="lazy"/>
+			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-man-portrait.webp" alt="portrait d'homme" loading="lazy"/>
+			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-wedding-portrait.webp" alt="photo de mariés" loading="lazy"/>
+			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg-women-portrait.webp" alt="portrait de femme" loading="lazy"/>
+			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-concert.webp" alt="concert" loading="lazy"/>
+			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-woman-portrait.webp" alt="portrait de femme" loading="lazy"/>
 		</div>
 	</div>
 	<div class="quote">
@@ -133,8 +120,8 @@
 			<figcaption class="quote__author">- Richard Avedon</figcaption>
 		</figure>
 	</div>
-</div>
-<div id="services">
+</section>
+<section id="services">
 	<h2 class="title">Mes services</h2>
 	<div class="container">
 		<div class="service">
@@ -169,16 +156,16 @@
 			</div>
 		</div>
 	</div>
-</div>
-<div class="quote">
+</section>
+<section class="quote">
 	<figure>
 		<blockquote>
 			<span class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</span>
 		</blockquote>
 		<figcaption class="quote__author">- Richard Avedon</figcaption>
 	</figure>
-</div>
-<div id="contact">
+</section>
+<footer id="contact">
 	<div class="container">
 		<div class="form-container">
 			<h3>Une question ? Une demande de devis ?</h3>
@@ -194,9 +181,29 @@
 			</form>
 		</div>
 		<div class="picture right">
-			<img src="./assets/images/camera.webp" alt="caméra" width="359" height="358">
+			<img src="./assets/images/camera.webp" alt="caméra" >
 		</div>
 	</div>
-</div>
+</footer>
+<script src="./assets/maugallery.js" defer></script>
+<script src="./assets/scripts.js" defer></script>
+<!-- Balisage JSON-LD pour les données structurées Schema.org -->
+<script type="application/ld+json">
+	{
+	"@context": "http://schema.org",
+	"@type": "LocalBusiness",
+	"name": "Nina Carducci",
+	"description": "Photographe professionnelle spécialisée dans la capture de moments uniques. Découvrez mon portfolio de photographies artistiques et contactez-moi pour discuter de vos besoins.",
+	"address": {
+		"@type": "PostalAddress",
+		"streetAddress": "68 avenue Alsace Lorraine",
+		"addressLocality": "Bordeaux",
+		"postalCode": "33200",
+		"addressCountry": "FR"
+	},
+	"telephone": "+33-5-56-67-78-89",
+	"openingHours": "Mo-Fr 10:00-19:00"
+	}
+	</script>
 </body>
 </html>
